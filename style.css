@@ -1,0 +1,104 @@
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     min-height: 100vh;
+     background: rgb(231, 231, 231);
+}
+
+.text h2{
+     font-size: 2.7em;
+     color: #ff2739;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 100;
+}
+
+input[type="radio"] {
+     position: relative;
+     width: 90px;
+     height: 40px;
+     margin: 0 30px;
+     outline: none;
+     -webkit-appearance: none;
+     cursor: pointer;
+     border-radius: 20px;
+     background: linear-gradient(145deg, #f7f7f7, #d0d0d0);
+     box-shadow:  5px 5px 13px #bbbbbb,
+             -5px -5px 13px #ffffff;
+     transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+input[type="radio"]:checked {
+     background: #ff2739;
+}
+
+input[type="radio"]:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 40px;
+     height: 40px;
+     border-radius: 20px;
+     background: linear-gradient(309deg, rgba(247,247,247,1) 0%, rgba(208,208,208,1) 100%);
+     transform: scale(0.98,0.96);
+     transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+input[type="radio"]:checked:before {
+     left: 50px;
+}
+
+input[type="radio"]:after {
+     content: "";
+     position: absolute;
+     left: 17px;
+     top: 18px;
+     width: 5px;
+     height: 5px;
+     border-radius: 50%;
+     background: #ff2739;
+     transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+input[type="radio"]:checked:after {
+     left: 10px;
+     top: 10px;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background: #ff2739;
+     transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+input[type="checkbox"] {
+     -webkit-appearance: none;
+     outline: none;
+     position: relative;
+     margin: 40px 55px;
+     width: 40px;
+     height: 40px;
+     border-radius: 10%;
+     background: #e7e7e7;
+     box-shadow: inset 2px 2px 5px #bbbbbb,
+          inset -2px -2px 5px #ffffff;
+     transition: 0.3s;
+}
+input[type="checkbox"]:checked {
+     background: #ff2739;
+     box-shadow:  5px 5px 13px #bbbbbb,
+          -5px -5px 13px #ffffff;
+
+}
+input[type="checkbox"]:checked:before {
+     content: "";
+     position: absolute;
+     left: 11px;
+     top: 11px;
+     width: 18px;
+     height: 18px;
+     border-radius: 50%;
+     background: #e7e7e7;
+     transform: rotate(45deg);
+     transition: 0.5s;
+}
